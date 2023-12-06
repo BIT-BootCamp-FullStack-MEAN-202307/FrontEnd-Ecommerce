@@ -1,0 +1,45 @@
+<header class="header">
+  <nav class="nav-bar dropdown header-nails-studio">
+
+  <div class="logo-header">
+    <a class="link-dashboard" routerLink="/dashboard"><img src="../../../assets/images/logo-inicial.png" alt="Logotipo inicial de la marca"></a>
+  </div>
+  <div class="menu_icon menu-hamburger" [class.menu_icon_Class]="menu_icon_variable" (click)="openMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+    <div class="navegacion">
+      <!-- <ul class="nav-links" [class.menuClass]="menuVariable"> -->
+        <ul class="nav-links main-menu" [class.menuClass]="menuVariable">
+          <li class="menu-list">
+            Productos
+            <ul class="submenu">
+              <li><a href="#">Mis productos</a></li>
+              <li><a href="#">Producto nuevo</a></li>
+            </ul>
+          </li>
+          <li class="menu-list">
+            Talleres
+            <ul class="submenu">
+              <li><a href="#">Mis Talleres</a></li>
+              <li><a href="#">Taller nuevo</a></li>
+            </ul>
+          </li>
+          <li class="menu-list">
+            Servicios
+            <ul class="submenu">
+              <li><a href="#">Mis servicios</a></li>
+              <li><a href="#">Servicio nuevo</a></li>
+            </ul>
+          </li>
+        </ul>
+
+
+
+
+
+    </div>
+      <a (click)="logout()" class="btn"><button>Logout</button></a>
+  </nav>
+</header>
